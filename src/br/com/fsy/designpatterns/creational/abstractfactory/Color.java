@@ -1,5 +1,5 @@
 package br.com.fsy.designpatterns.creational.abstractfactory;
 
-public interface IColor {
+public interface Color {
 	void fill();
 }

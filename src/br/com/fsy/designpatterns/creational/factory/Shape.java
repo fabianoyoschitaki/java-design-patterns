@@ -1,5 +1,5 @@
 package br.com.fsy.designpatterns.creational.factory;
 
-public interface IShape {
+public interface Shape {
 	void draw();
 }

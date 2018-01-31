@@ -3,8 +3,8 @@ package br.com.fsy.designpatterns.creational.factory;
 public class ShapeFactory {
 	
 	//use getShape method to get object of type shape
-	public IShape getShape(String type){
-		IShape retorno = null;
+	public Shape getShape(String type){
+		Shape retorno = null;
 		if (type != null){
 			if (type.equalsIgnoreCase("SQUARE")){
 				retorno = new Square();

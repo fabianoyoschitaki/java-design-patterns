@@ -3,8 +3,8 @@ package br.com.fsy.designpatterns.creational.abstractfactory;
 public class ShapeFactory extends AbstractFactory {
 	
 	//use getShape method to get object of type shape
-	public IShape getShape(String type){
-		IShape retorno = null;
+	public Shape getShape(String type){
+		Shape retorno = null;
 		if (type != null){
 			if (type.equalsIgnoreCase("SQUARE")){
 				retorno = new Square();
@@ -18,7 +18,7 @@ public class ShapeFactory extends AbstractFactory {
 	}
 
 	@Override
-	IColor getColor(String color) {
+	Color getColor(String color) {
 		return null;
 	}
 }
