@@ -6,19 +6,19 @@ package br.com.fsy.designpatterns.creational.factory;
  * ways to create an object. In Factory pattern, we create object without exposing the creation logic 
  * to the client and refer to newly created object using a common interface.
  * 
- * @author F0113091
+ * @author Fabiano Yoschitaki
  */
 public class FactoryPatternDemo {
 	public static void main(String[] args) {
 		ShapeFactory factory = new ShapeFactory();
 		
-		Shape circle = factory.getShape("CIRCLE");
+		IShape circle = factory.getShape("CIRCLE");
 		circle.draw();
 		
-		Shape square = factory.getShape("SQUARE");
+		IShape square = factory.getShape("SQUARE");
 		square.draw();
 		
-		Shape rectangle = factory.getShape("RECTANGLE");
+		IShape rectangle = factory.getShape("RECTANGLE");
 		rectangle.draw();
 	}
 }

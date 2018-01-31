@@ -1,4 +1,4 @@
-package br.com.fsy.designpatterns.creational.factory;
+package br.com.fsy.designpatterns.creational.abstractfactory;
 
 public class Square implements IShape {
 	public void draw() {

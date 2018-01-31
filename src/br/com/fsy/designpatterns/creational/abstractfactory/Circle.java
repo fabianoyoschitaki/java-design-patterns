@@ -1,4 +1,4 @@
-package br.com.fsy.designpatterns.creational.factory;
+package br.com.fsy.designpatterns.creational.abstractfactory;
 
 public class Circle implements IShape {
 	public void draw() {

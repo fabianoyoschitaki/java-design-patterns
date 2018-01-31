@@ -1,6 +1,6 @@
-package br.com.fsy.designpatterns.creational.factory;
+package br.com.fsy.designpatterns.creational.abstractfactory;
 
-public class ShapeFactory {
+public class ShapeFactory extends AbstractFactory {
 	
 	//use getShape method to get object of type shape
 	public IShape getShape(String type){
@@ -15,5 +15,10 @@ public class ShapeFactory {
 			}
 		}
 		return retorno;
+	}
+
+	@Override
+	IColor getColor(String color) {
+		return null;
 	}
 }
